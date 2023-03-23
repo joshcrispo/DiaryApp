@@ -6,13 +6,8 @@ public class User {
     private String uEmail;
     private String uPass;
 
-    public int getuId() {
-        return uId;
-    }
-
     //Constructors
-    public User(int uId, String uName, String uEmail, String uPass, String uGender) {
-        this.uId = uId;
+    public User(String uName, String uEmail, String uPass) {
         this.uName = uName;
         this.uEmail = uEmail;
         this.uPass = uPass;
@@ -23,6 +18,11 @@ public class User {
 
 
     //Getters and setters
+
+    public int getuId() {
+        return uId;
+    }
+
     public void setuId(int uId) {
         this.uId = uId;
     }

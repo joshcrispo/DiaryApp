@@ -7,6 +7,7 @@ import static com.example.diaryapp.DiaDbHelper.KEY_PASS;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 
 public class DiaryDatabaseManager extends DiaDbManager {
     public DiaryDatabaseManager(Context context) {
@@ -23,5 +24,11 @@ public class DiaryDatabaseManager extends DiaDbManager {
         // Inserting Row
         diaDB.insert(DB_USER_TABLE, null, values);
 
+    }
+
+    public Cursor getUser(String uEmail, String uPass){
+        String query = "SELECT * FROM user WHERE uEmail = ? AND uPass = ? ";
+        String[] selectionArgs = {uEmail, uPass };
+        return diaDB.rawQuery(query, selectionArgs);
     }
 }

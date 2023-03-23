@@ -2,10 +2,8 @@ package com.example.diaryapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -13,20 +11,36 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     Button loginButton;
-    EditText email;
-    EditText pass;
+    EditText et1;
+    EditText et2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        email = (EditText) findViewById(R.id.login_email);
-        pass = (EditText) findViewById(R.id.login_pass);
+        et1 = (EditText) findViewById(R.id.login_email);
+        et2 = (EditText) findViewById(R.id.login_pass);
 
         //Opening Database
         DiaryDatabaseManager dbManager = new DiaryDatabaseManager(getApplicationContext());
         dbManager.open();
 
+        //Adding user dummy user
+        dbManager.addUser(new User("Joshua", "joshua@tudublin.ie", "mypass123"));
 
+        //Log in
+        loginButton = (Button) findViewById(R.id.buttonlog);
+        loginButton.setOnClickListener(view -> {
+            String email = et1.getEditableText().toString();
+            String pass = et2.getEditableText().toString();
+            Cursor cursor = dbManager.getUser(email, pass);
+
+            if (cursor.moveToFirst()) {
+                Toast.makeText(MainActivity.this, "Okay bro, you did it", Toast.LENGTH_LONG).show();
+            }
+            else{
+                Toast.makeText(MainActivity.this, "Wrong login details", Toast.LENGTH_LONG).show();
+            }
+        });
     }
 }
