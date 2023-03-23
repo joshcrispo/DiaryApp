@@ -1,5 +1,11 @@
 package com.example.diaryapp;
 
+import static com.example.diaryapp.DiaDbHelper.DB_USER_TABLE;
+import static com.example.diaryapp.DiaDbHelper.KEY_EMAIL;
+import static com.example.diaryapp.DiaDbHelper.KEY_NAME;
+import static com.example.diaryapp.DiaDbHelper.KEY_PASS;
+
+import android.content.ContentValues;
 import android.content.Context;
 
 public class DiaryDatabaseManager extends DiaDbManager {
@@ -7,5 +13,15 @@ public class DiaryDatabaseManager extends DiaDbManager {
         super(context);
     }
 
+    void addUser(User u) {
 
+        ContentValues values = new ContentValues();
+        values.put(KEY_NAME, u.getuName()); // get users name
+        values.put(KEY_EMAIL, u.getuEmail()); // get users email
+        values.put(KEY_PASS, u.getuPass()); // get users name
+
+        // Inserting Row
+        diaDB.insert(DB_USER_TABLE, null, values);
+
+    }
 }

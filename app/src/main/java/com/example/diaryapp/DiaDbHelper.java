@@ -18,15 +18,14 @@ public class DiaDbHelper extends SQLiteOpenHelper {
     protected static final String KEY_NAME = "uName";
     protected static final String KEY_EMAIL = "uEmail";
     protected static final String KEY_PASS = "uPass";
-    protected static final String KEY_GENDER = "uGender";
 
     //Create table queries
     private static final String DB_CREATE_USER_TABLE = "CREATE TABLE " + DB_USER_TABLE + " (" +
             KEY_USER_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
             KEY_NAME + " TEXT NOT NULL, " +
             KEY_EMAIL + " TEXT NOT NULL UNIQUE, " +
-            KEY_PASS + " TEXT NOT NULL, " +
-            KEY_GENDER + " TEXT);";
+            KEY_PASS + " TEXT NOT NULL);";
+
 
 
     public DiaDbHelper(Context context) {
