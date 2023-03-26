@@ -10,6 +10,7 @@ color white
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 id buttonlog
+id date
 id login_email
 id login_pass
 layout activity_main

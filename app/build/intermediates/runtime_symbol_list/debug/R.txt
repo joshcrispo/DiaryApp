@@ -2776,6 +2776,7 @@ int id currentState 0x7f080086
 int id custom 0x7f080087
 int id customPanel 0x7f080088
 int id cut 0x7f080089
+int id date 0x7f0801df
 int id date_picker_actions 0x7f08008a
 int id decelerate 0x7f08008b
 int id decelerateAndComplete 0x7f08008c
