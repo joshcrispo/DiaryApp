@@ -38,7 +38,8 @@
             android:layout_height="fill_parent"
             android:src="@drawable/ic_baseline_person_24"
             android:background="@null"
-            android:layout_weight="7"></ImageButton>
+            android:layout_weight="7"
+            android:id="@+id/user_button"></ImageButton>
 
     </LinearLayout>
     <LinearLayout
@@ -67,7 +68,8 @@
                 android:layout_height="fill_parent"
                 android:layout_weight="9"
                 android:src="@drawable/ic_baseline_search_24"
-                android:background="@null">
+                android:background="@null"
+                android:id="@+id/search">
             </ImageButton>
 
         </LinearLayout>
@@ -94,6 +96,7 @@
             android:src="@drawable/ic_baseline_calendar_month_24"
             android:background="@null"
             android:layout_weight="1"
+            android:id="@+id/calendar"
             ></ImageButton>
         <ImageButton
             android:layout_width="fill_parent"
@@ -101,6 +104,7 @@
             android:src="@drawable/ic_baseline_menu_book_24"
             android:background="@null"
             android:layout_weight="1"
+            android:id="@+id/entryOverview"
             ></ImageButton>
         <ImageButton
             android:layout_width="fill_parent"
@@ -108,6 +112,7 @@
             android:src="@drawable/ic_baseline_note_alt_24"
             android:background="@null"
             android:layout_weight="1"
+            android:id="@+id/writeEntry"
             ></ImageButton>
         <ImageButton
             android:layout_width="fill_parent"
@@ -115,6 +120,7 @@
             android:src="@drawable/ic_baseline_settings_24"
             android:background="@null"
             android:layout_weight="1"
+            android:id="@+id/settings"
             ></ImageButton>
 
     </LinearLayout>

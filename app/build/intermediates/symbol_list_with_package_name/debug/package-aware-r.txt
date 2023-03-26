@@ -2747,6 +2747,7 @@ id bounceStart
 id buttonPanel
 id buttonlog
 id cache_measures
+id calendar
 id callMeasure
 id cancel_button
 id carryVelocity
@@ -2825,6 +2826,7 @@ id end
 id endToStart
 id enterAlways
 id enterAlwaysCollapsed
+id entryOverview
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
@@ -3006,6 +3008,7 @@ id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
 id scrollable
+id search
 id search_badge
 id search_bar
 id search_button
@@ -3019,6 +3022,7 @@ id search_voice_btn
 id select_dialog_listview
 id selected
 id selection_type
+id settings
 id sharedValueSet
 id sharedValueUnset
 id shortcut
@@ -3108,6 +3112,7 @@ id uniform
 id unlabeled
 id up
 id useLogo
+id user_button
 id vertical_only
 id view_offset_helper
 id view_transition
@@ -3124,6 +3129,7 @@ id withinBounds
 id wrap
 id wrap_content
 id wrap_content_constrained
+id writeEntry
 id x_left
 id x_right
 integer abc_config_activityDefaultDur

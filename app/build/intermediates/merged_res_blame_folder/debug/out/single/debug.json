@@ -1,19 +1,15 @@
 [
     {
-        "merged": "com.example.diaryapp-merged_res-29:/drawable_ic_baseline_search_24.xml.flat",
-        "source": "com.example.diaryapp-main-31:/drawable/ic_baseline_search_24.xml"
-    },
-    {
         "merged": "/Users/joshuacrispo/.gradle/daemon/7.4/com.example.diaryapp-merged_res-29:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
         "source": "/Users/joshuacrispo/.gradle/daemon/7.4/com.example.diaryapp-main-31:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "/Users/joshuacrispo/.gradle/daemon/7.4/com.example.diaryapp-merged_res-29:/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/joshuacrispo/.gradle/daemon/7.4/com.example.diaryapp-main-31:/mipmap-hdpi/ic_launcher_round.webp"
-    },
-    {
         "merged": "/Users/joshuacrispo/.gradle/daemon/7.4/com.example.diaryapp-merged_res-29:/mipmap-hdpi_ic_launcher.webp.flat",
         "source": "/Users/joshuacrispo/.gradle/daemon/7.4/com.example.diaryapp-main-31:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/joshuacrispo/.gradle/daemon/7.4/com.example.diaryapp-merged_res-29:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/joshuacrispo/.gradle/daemon/7.4/com.example.diaryapp-main-31:/mipmap-hdpi/ic_launcher_round.webp"
     },
     {
         "merged": "/Users/joshuacrispo/.gradle/daemon/7.4/com.example.diaryapp-merged_res-29:/drawable_ic_launcher_background.xml.flat",
@@ -46,6 +42,10 @@
     {
         "merged": "/Users/joshuacrispo/.gradle/daemon/7.4/com.example.diaryapp-merged_res-29:/layout_entries.xml.flat",
         "source": "/Users/joshuacrispo/.gradle/daemon/7.4/com.example.diaryapp-main-31:/layout/entries.xml"
+    },
+    {
+        "merged": "/Users/joshuacrispo/.gradle/daemon/7.4/com.example.diaryapp-merged_res-29:/drawable_ic_baseline_search_24.xml.flat",
+        "source": "/Users/joshuacrispo/.gradle/daemon/7.4/com.example.diaryapp-main-31:/drawable/ic_baseline_search_24.xml"
     },
     {
         "merged": "/Users/joshuacrispo/.gradle/daemon/7.4/com.example.diaryapp-merged_res-29:/mipmap-xxhdpi_ic_launcher_round.webp.flat",

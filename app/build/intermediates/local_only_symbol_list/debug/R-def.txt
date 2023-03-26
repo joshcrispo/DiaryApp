@@ -17,9 +17,15 @@ drawable ic_baseline_settings_24
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 id buttonlog
+id calendar
 id date
+id entryOverview
 id login_email
 id login_pass
+id search
+id settings
+id user_button
+id writeEntry
 layout activity_main
 layout activity_menu
 layout entries
