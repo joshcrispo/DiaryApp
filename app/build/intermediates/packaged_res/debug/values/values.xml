@@ -9,8 +9,10 @@
     <color name="white">#FFFFFFFF</color>
     <string name="app_name">DiaryApp</string>
     <string name="email">Email:</string>
+    <string name="entryHeader">Entries</string>
     <string name="header">myDiary</string>
     <string name="pass">Password:</string>
+    <string name="search">Search</string>
     <style name="Theme.DiaryApp" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         
         <item name="colorPrimary">@color/purple_500</item>

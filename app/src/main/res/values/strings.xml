@@ -4,4 +4,5 @@
     <string name="email">Email:</string>
     <string name="pass">Password:</string>
     <string name="entryHeader">Entries</string>
+    <string name="search">Search</string>
 </resources>
