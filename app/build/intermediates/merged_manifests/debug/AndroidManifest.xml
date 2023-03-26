@@ -22,6 +22,13 @@
         android:testOnly="true"
         android:theme="@style/Theme.DiaryApp" >
         <activity
+            android:name="com.example.diaryapp.Menu"
+            android:exported="false" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name="com.example.diaryapp.MainActivity"
             android:exported="true" >
             <intent-filter>

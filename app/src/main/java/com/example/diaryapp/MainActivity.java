@@ -3,6 +3,7 @@ package com.example.diaryapp;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.text.format.DateFormat;
@@ -39,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         dbManager.open();
 
         //Adding user dummy user
-        dbManager.addUser(new User("Joshua", "joshua@tudublin.ie", "mypass123"));
+        //dbManager.addUser(new User("Joshua", "joshua@tudublin.ie", "mypass123"));
 
         //Log in
         loginButton = (Button) findViewById(R.id.buttonlog);
@@ -49,8 +50,7 @@ public class MainActivity extends AppCompatActivity {
             Cursor cursor = dbManager.getUser(email, pass);
 
             if (cursor.moveToFirst()) {
-                Toast.makeText(MainActivity.this, "Okay bro, you did it", Toast.LENGTH_LONG).show();
-            }
+                startActivity(new Intent(MainActivity.this, Menu.class));            }
             else{
                 Toast.makeText(MainActivity.this, "Wrong login details", Toast.LENGTH_LONG).show();
             }
