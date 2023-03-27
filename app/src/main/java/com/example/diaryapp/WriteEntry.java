@@ -38,6 +38,9 @@ public class WriteEntry extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_write_entry);
 
+        Bundle data         = getIntent().getExtras();
+        int userID        = data.getInt("userID");
+
         date = (TextView) this.findViewById(R.id.entryDate);
         String theDate = day + " - " +s;
         date.setText(theDate);
@@ -53,7 +56,17 @@ public class WriteEntry extends AppCompatActivity {
 
 
         // Event handlers for buttons
-        back.setOnClickListener(view -> startActivity(new Intent(WriteEntry.this, Menu.class)));
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), Menu.class);
+
+                // add the data to send to the next screen onto the intent as "extras"
+                intent.putExtra("userID", userID);
+                startActivity(intent);
+            }
+        });
+
         user.setOnClickListener(view -> Toast.makeText(WriteEntry.this, "Clicked user", Toast.LENGTH_LONG).show());
         photo.setOnClickListener(view -> Toast.makeText(WriteEntry.this, "Clicked photo", Toast.LENGTH_LONG).show());
         audio.setOnClickListener(view -> Toast.makeText(WriteEntry.this, "Clicked audio", Toast.LENGTH_LONG).show());
@@ -65,13 +78,19 @@ public class WriteEntry extends AppCompatActivity {
                 String entryTitle = title.getEditableText().toString();
                 String description = yourDayText.getEditableText().toString();
 
-                //Opening Database
-                DiaryDatabaseManager dbManager = new DiaryDatabaseManager(getApplicationContext());
-                dbManager.open();
-                dbManager.addEntry(new Entry(entryTitle, description, theDate));
+                if((entryTitle != null && !entryTitle.trim().isEmpty()) && (description != null && !description.trim().isEmpty())) {
+                    //Opening Database
+                    DiaryDatabaseManager dbManager = new DiaryDatabaseManager(getApplicationContext());
+                    dbManager.open();
 
-                Toast.makeText(WriteEntry.this, "Saved", Toast.LENGTH_LONG).show();
-                dbManager.close();
+                    dbManager.addEntry(new Entry(entryTitle, description, theDate), userID);
+
+                    Toast.makeText(WriteEntry.this, "Saved", Toast.LENGTH_LONG).show();
+                    dbManager.close();
+                }
+                else {
+                    Toast.makeText(WriteEntry.this, "Please fill out", Toast.LENGTH_LONG).show();
+                }
             }
         });
 

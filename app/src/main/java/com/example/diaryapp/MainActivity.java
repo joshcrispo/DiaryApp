@@ -49,9 +49,16 @@ public class MainActivity extends AppCompatActivity {
             String pass = et2.getEditableText().toString();
             Cursor cursor = dbManager.getUser(email, pass);
 
+
             if (cursor.moveToFirst()) {
+                int uID = cursor.getInt(0);
                 dbManager.close();
-                startActivity(new Intent(MainActivity.this, Menu.class));
+                // switching screens requires an intent
+                Intent intent = new Intent(getApplicationContext(), Menu.class);
+
+                // add the data to send to the next screen onto the intent as "extras"
+                intent.putExtra("userID", uID);
+                startActivity(intent);
             }
             else{
                 Toast.makeText(MainActivity.this, "Wrong login details", Toast.LENGTH_LONG).show();

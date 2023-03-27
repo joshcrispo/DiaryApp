@@ -37,15 +37,10 @@ public class DiaDbHelper extends SQLiteOpenHelper {
             KEY_ENTRY_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
             KEY_TITLE + " TEXT NOT NULL, " +
             KEY_TEXT + " TEXT NOT NULL, " +
-            KEY_DATE + " TEXT NOT NULL);";
-
-    private static final String DB_CREATE_USER_ENTRY_TABLE = "CREATE TABLE " + DB_USER_ENTRY_TABLE + " (" +
+            KEY_DATE + " TEXT NOT NULL, " +
             KEY_USER_ID + " INTEGER NOT NULL, " +
-            KEY_ENTRY_ID + " INTEGER NOT NULL, " +
-            "FOREIGN KEY (" + KEY_USER_ID + ") REFERENCES " + DB_USER_TABLE + " (" + KEY_USER_ID + ") ON DELETE CASCADE ON UPDATE CASCADE, " +
-            "FOREIGN KEY (" + KEY_ENTRY_ID + ") REFERENCES " + DB_DIARY_ENTRY_TABLE + " (" + KEY_ENTRY_ID + ") ON DELETE CASCADE ON UPDATE CASCADE, " +
-            "PRIMARY KEY (" + KEY_USER_ID + ", " + KEY_ENTRY_ID +")"
-            + ");";
+            "FOREIGN KEY (" + KEY_USER_ID + ") REFERENCES " + DB_USER_TABLE + " (" + KEY_USER_ID + "));";
+
 
 
     public DiaDbHelper(Context context) {

@@ -22,6 +22,9 @@ public class Menu extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
 
+        Bundle data         = getIntent().getExtras();
+        int userID        = data.getInt("userID");
+
         calendar = (ImageButton) findViewById(R.id.calendar);
         entryOverview = (ImageButton) findViewById(R.id.entryOverview);
         writeEntry = (ImageButton) findViewById(R.id.writeEntry);
@@ -31,7 +34,18 @@ public class Menu extends AppCompatActivity {
 
         // Event handlers for buttons
         calendar.setOnClickListener(view -> startActivity(new Intent(Menu.this, Calendar.class)));
-        writeEntry.setOnClickListener(view -> startActivity(new Intent(Menu.this, WriteEntry.class)));
+
+        writeEntry.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), WriteEntry.class);
+
+                // add the data to send to the next screen onto the intent as "extras"
+                intent.putExtra("userID", userID);
+                startActivity(intent);
+            }
+        });
+
         settings.setOnClickListener(view -> startActivity(new Intent(Menu.this, Settings.class)));
         user.setOnClickListener(view -> Toast.makeText(Menu.this, "Clicked user", Toast.LENGTH_LONG).show());
         search.setOnClickListener(view -> Toast.makeText(Menu.this, "Clicked search", Toast.LENGTH_LONG).show());

@@ -8,6 +8,7 @@ import static com.example.diaryapp.DiaDbHelper.KEY_NAME;
 import static com.example.diaryapp.DiaDbHelper.KEY_PASS;
 import static com.example.diaryapp.DiaDbHelper.KEY_TEXT;
 import static com.example.diaryapp.DiaDbHelper.KEY_TITLE;
+import static com.example.diaryapp.DiaDbHelper.KEY_USER_ID;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -30,12 +31,13 @@ public class DiaryDatabaseManager extends DiaDbManager {
 
     }
 
-    void addEntry(Entry e) {
+    void addEntry(Entry e, int uId) {
 
         ContentValues values = new ContentValues();
         values.put(KEY_TITLE, e.geteTitle()); // get entry title
         values.put(KEY_TEXT, e.geteText()); // get entry description
         values.put(KEY_DATE, e.geteDate()); // get entry date
+        values.put(KEY_USER_ID, uId); // get entry date
 
         // Inserting Row
         diaDB.insert(DB_DIARY_ENTRY_TABLE, null, values);
