@@ -2562,6 +2562,7 @@ drawable ic_baseline_calendar_month_24
 drawable ic_baseline_menu_book_24
 drawable ic_baseline_note_alt_24
 drawable ic_baseline_person_24
+drawable ic_baseline_save_24
 drawable ic_baseline_search_24
 drawable ic_baseline_settings_24
 drawable ic_clock_black_24dp
@@ -2826,6 +2827,7 @@ id end
 id endToStart
 id enterAlways
 id enterAlwaysCollapsed
+id entryDate
 id entryOverview
 id exitUntilCollapsed
 id expand_activities_button
@@ -3256,6 +3258,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
 layout activity_menu
+layout activity_write_entry
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -3377,6 +3380,7 @@ string character_counter_pattern
 string clear_text_end_icon_content_description
 string email
 string entryHeader
+string entryTitle
 string error_a11y_label
 string error_icon_content_description
 string exposed_dropdown_menu_content_description

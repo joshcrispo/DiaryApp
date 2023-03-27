@@ -11,7 +11,7 @@
 9-->/Users/joshuacrispo/Desktop/College TUD/3rd YR/Global Classroom/DiaryApp/app/src/main/AndroidManifest.xml
 10
 11    <application
-11-->/Users/joshuacrispo/Desktop/College TUD/3rd YR/Global Classroom/DiaryApp/app/src/main/AndroidManifest.xml:5:5-35:19
+11-->/Users/joshuacrispo/Desktop/College TUD/3rd YR/Global Classroom/DiaryApp/app/src/main/AndroidManifest.xml:5:5-42:19
 12        android:allowBackup="true"
 12-->/Users/joshuacrispo/Desktop/College TUD/3rd YR/Global Classroom/DiaryApp/app/src/main/AndroidManifest.xml:6:9-35
 13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -35,8 +35,8 @@
 23-->/Users/joshuacrispo/Desktop/College TUD/3rd YR/Global Classroom/DiaryApp/app/src/main/AndroidManifest.xml:13:9-46
 24        <activity
 24-->/Users/joshuacrispo/Desktop/College TUD/3rd YR/Global Classroom/DiaryApp/app/src/main/AndroidManifest.xml:15:9-21:20
-25            android:name="com.example.diaryapp.Menu"
-25-->/Users/joshuacrispo/Desktop/College TUD/3rd YR/Global Classroom/DiaryApp/app/src/main/AndroidManifest.xml:16:13-33
+25            android:name="com.example.diaryapp.WriteEntry"
+25-->/Users/joshuacrispo/Desktop/College TUD/3rd YR/Global Classroom/DiaryApp/app/src/main/AndroidManifest.xml:16:13-39
 26            android:exported="false" >
 26-->/Users/joshuacrispo/Desktop/College TUD/3rd YR/Global Classroom/DiaryApp/app/src/main/AndroidManifest.xml:17:13-37
 27            <meta-data
@@ -47,51 +47,64 @@
 29-->/Users/joshuacrispo/Desktop/College TUD/3rd YR/Global Classroom/DiaryApp/app/src/main/AndroidManifest.xml:20:17-33
 30        </activity>
 31        <activity
-31-->/Users/joshuacrispo/Desktop/College TUD/3rd YR/Global Classroom/DiaryApp/app/src/main/AndroidManifest.xml:22:9-34:20
-32            android:name="com.example.diaryapp.MainActivity"
-32-->/Users/joshuacrispo/Desktop/College TUD/3rd YR/Global Classroom/DiaryApp/app/src/main/AndroidManifest.xml:23:13-41
-33            android:exported="true" >
-33-->/Users/joshuacrispo/Desktop/College TUD/3rd YR/Global Classroom/DiaryApp/app/src/main/AndroidManifest.xml:24:13-36
-34            <intent-filter>
-34-->/Users/joshuacrispo/Desktop/College TUD/3rd YR/Global Classroom/DiaryApp/app/src/main/AndroidManifest.xml:25:13-29:29
-35                <action android:name="android.intent.action.MAIN" />
-35-->/Users/joshuacrispo/Desktop/College TUD/3rd YR/Global Classroom/DiaryApp/app/src/main/AndroidManifest.xml:26:17-69
-35-->/Users/joshuacrispo/Desktop/College TUD/3rd YR/Global Classroom/DiaryApp/app/src/main/AndroidManifest.xml:26:25-66
-36
-37                <category android:name="android.intent.category.LAUNCHER" />
-37-->/Users/joshuacrispo/Desktop/College TUD/3rd YR/Global Classroom/DiaryApp/app/src/main/AndroidManifest.xml:28:17-77
-37-->/Users/joshuacrispo/Desktop/College TUD/3rd YR/Global Classroom/DiaryApp/app/src/main/AndroidManifest.xml:28:27-74
-38            </intent-filter>
-39
-40            <meta-data
-40-->/Users/joshuacrispo/Desktop/College TUD/3rd YR/Global Classroom/DiaryApp/app/src/main/AndroidManifest.xml:18:13-20:36
-41                android:name="android.app.lib_name"
-41-->/Users/joshuacrispo/Desktop/College TUD/3rd YR/Global Classroom/DiaryApp/app/src/main/AndroidManifest.xml:19:17-52
-42                android:value="" />
-42-->/Users/joshuacrispo/Desktop/College TUD/3rd YR/Global Classroom/DiaryApp/app/src/main/AndroidManifest.xml:20:17-33
-43        </activity>
-44
-45        <provider
-45-->[androidx.emoji2:emoji2:1.2.0] /Users/joshuacrispo/.gradle/caches/transforms-3/c03fa7bc00a04a375204b573f0966d9f/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
-46            android:name="androidx.startup.InitializationProvider"
-46-->[androidx.emoji2:emoji2:1.2.0] /Users/joshuacrispo/.gradle/caches/transforms-3/c03fa7bc00a04a375204b573f0966d9f/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
-47            android:authorities="com.example.diaryapp.androidx-startup"
-47-->[androidx.emoji2:emoji2:1.2.0] /Users/joshuacrispo/.gradle/caches/transforms-3/c03fa7bc00a04a375204b573f0966d9f/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
-48            android:exported="false" >
-48-->[androidx.emoji2:emoji2:1.2.0] /Users/joshuacrispo/.gradle/caches/transforms-3/c03fa7bc00a04a375204b573f0966d9f/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
-49            <meta-data
-49-->[androidx.emoji2:emoji2:1.2.0] /Users/joshuacrispo/.gradle/caches/transforms-3/c03fa7bc00a04a375204b573f0966d9f/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
-50                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-50-->[androidx.emoji2:emoji2:1.2.0] /Users/joshuacrispo/.gradle/caches/transforms-3/c03fa7bc00a04a375204b573f0966d9f/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
-51                android:value="androidx.startup" />
-51-->[androidx.emoji2:emoji2:1.2.0] /Users/joshuacrispo/.gradle/caches/transforms-3/c03fa7bc00a04a375204b573f0966d9f/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
-52            <meta-data
-52-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/joshuacrispo/.gradle/caches/transforms-3/0ce9e5f033589fdf0ab757f82f7808ec/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
-53                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-53-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/joshuacrispo/.gradle/caches/transforms-3/0ce9e5f033589fdf0ab757f82f7808ec/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78
-54                android:value="androidx.startup" />
-54-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/joshuacrispo/.gradle/caches/transforms-3/0ce9e5f033589fdf0ab757f82f7808ec/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
-55        </provider>
-56    </application>
-57
-58</manifest>
+31-->/Users/joshuacrispo/Desktop/College TUD/3rd YR/Global Classroom/DiaryApp/app/src/main/AndroidManifest.xml:22:9-28:20
+32            android:name="com.example.diaryapp.Menu"
+32-->/Users/joshuacrispo/Desktop/College TUD/3rd YR/Global Classroom/DiaryApp/app/src/main/AndroidManifest.xml:23:13-33
+33            android:exported="false" >
+33-->/Users/joshuacrispo/Desktop/College TUD/3rd YR/Global Classroom/DiaryApp/app/src/main/AndroidManifest.xml:24:13-37
+34            <meta-data
+34-->/Users/joshuacrispo/Desktop/College TUD/3rd YR/Global Classroom/DiaryApp/app/src/main/AndroidManifest.xml:18:13-20:36
+35                android:name="android.app.lib_name"
+35-->/Users/joshuacrispo/Desktop/College TUD/3rd YR/Global Classroom/DiaryApp/app/src/main/AndroidManifest.xml:19:17-52
+36                android:value="" />
+36-->/Users/joshuacrispo/Desktop/College TUD/3rd YR/Global Classroom/DiaryApp/app/src/main/AndroidManifest.xml:20:17-33
+37        </activity>
+38        <activity
+38-->/Users/joshuacrispo/Desktop/College TUD/3rd YR/Global Classroom/DiaryApp/app/src/main/AndroidManifest.xml:29:9-41:20
+39            android:name="com.example.diaryapp.MainActivity"
+39-->/Users/joshuacrispo/Desktop/College TUD/3rd YR/Global Classroom/DiaryApp/app/src/main/AndroidManifest.xml:30:13-41
+40            android:exported="true" >
+40-->/Users/joshuacrispo/Desktop/College TUD/3rd YR/Global Classroom/DiaryApp/app/src/main/AndroidManifest.xml:31:13-36
+41            <intent-filter>
+41-->/Users/joshuacrispo/Desktop/College TUD/3rd YR/Global Classroom/DiaryApp/app/src/main/AndroidManifest.xml:32:13-36:29
+42                <action android:name="android.intent.action.MAIN" />
+42-->/Users/joshuacrispo/Desktop/College TUD/3rd YR/Global Classroom/DiaryApp/app/src/main/AndroidManifest.xml:33:17-69
+42-->/Users/joshuacrispo/Desktop/College TUD/3rd YR/Global Classroom/DiaryApp/app/src/main/AndroidManifest.xml:33:25-66
+43
+44                <category android:name="android.intent.category.LAUNCHER" />
+44-->/Users/joshuacrispo/Desktop/College TUD/3rd YR/Global Classroom/DiaryApp/app/src/main/AndroidManifest.xml:35:17-77
+44-->/Users/joshuacrispo/Desktop/College TUD/3rd YR/Global Classroom/DiaryApp/app/src/main/AndroidManifest.xml:35:27-74
+45            </intent-filter>
+46
+47            <meta-data
+47-->/Users/joshuacrispo/Desktop/College TUD/3rd YR/Global Classroom/DiaryApp/app/src/main/AndroidManifest.xml:18:13-20:36
+48                android:name="android.app.lib_name"
+48-->/Users/joshuacrispo/Desktop/College TUD/3rd YR/Global Classroom/DiaryApp/app/src/main/AndroidManifest.xml:19:17-52
+49                android:value="" />
+49-->/Users/joshuacrispo/Desktop/College TUD/3rd YR/Global Classroom/DiaryApp/app/src/main/AndroidManifest.xml:20:17-33
+50        </activity>
+51
+52        <provider
+52-->[androidx.emoji2:emoji2:1.2.0] /Users/joshuacrispo/.gradle/caches/transforms-3/c03fa7bc00a04a375204b573f0966d9f/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+53            android:name="androidx.startup.InitializationProvider"
+53-->[androidx.emoji2:emoji2:1.2.0] /Users/joshuacrispo/.gradle/caches/transforms-3/c03fa7bc00a04a375204b573f0966d9f/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
+54            android:authorities="com.example.diaryapp.androidx-startup"
+54-->[androidx.emoji2:emoji2:1.2.0] /Users/joshuacrispo/.gradle/caches/transforms-3/c03fa7bc00a04a375204b573f0966d9f/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
+55            android:exported="false" >
+55-->[androidx.emoji2:emoji2:1.2.0] /Users/joshuacrispo/.gradle/caches/transforms-3/c03fa7bc00a04a375204b573f0966d9f/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
+56            <meta-data
+56-->[androidx.emoji2:emoji2:1.2.0] /Users/joshuacrispo/.gradle/caches/transforms-3/c03fa7bc00a04a375204b573f0966d9f/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+57                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+57-->[androidx.emoji2:emoji2:1.2.0] /Users/joshuacrispo/.gradle/caches/transforms-3/c03fa7bc00a04a375204b573f0966d9f/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
+58                android:value="androidx.startup" />
+58-->[androidx.emoji2:emoji2:1.2.0] /Users/joshuacrispo/.gradle/caches/transforms-3/c03fa7bc00a04a375204b573f0966d9f/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
+59            <meta-data
+59-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/joshuacrispo/.gradle/caches/transforms-3/0ce9e5f033589fdf0ab757f82f7808ec/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
+60                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+60-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/joshuacrispo/.gradle/caches/transforms-3/0ce9e5f033589fdf0ab757f82f7808ec/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78
+61                android:value="androidx.startup" />
+61-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/joshuacrispo/.gradle/caches/transforms-3/0ce9e5f033589fdf0ab757f82f7808ec/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
+62        </provider>
+63    </application>
+64
+65</manifest>

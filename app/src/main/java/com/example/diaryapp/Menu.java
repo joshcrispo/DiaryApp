@@ -2,6 +2,7 @@ package com.example.diaryapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
@@ -31,7 +32,7 @@ public class Menu extends AppCompatActivity {
         // Event handlers for buttons
         calendar.setOnClickListener(view -> Toast.makeText(Menu.this, "Clicked calendar", Toast.LENGTH_LONG).show());
         entryOverview.setOnClickListener(view -> Toast.makeText(Menu.this, "Clicked entry overview", Toast.LENGTH_LONG).show());
-        writeEntry.setOnClickListener(view -> Toast.makeText(Menu.this, "Clicked write entry", Toast.LENGTH_LONG).show());
+        writeEntry.setOnClickListener(view -> startActivity(new Intent(Menu.this, WriteEntry.class)));
         settings.setOnClickListener(view -> Toast.makeText(Menu.this, "Clicked settings", Toast.LENGTH_LONG).show());
         user.setOnClickListener(view -> Toast.makeText(Menu.this, "Clicked user", Toast.LENGTH_LONG).show());
         search.setOnClickListener(view -> Toast.makeText(Menu.this, "Clicked search", Toast.LENGTH_LONG).show());

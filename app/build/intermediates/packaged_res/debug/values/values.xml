@@ -10,6 +10,7 @@
     <string name="app_name">DiaryApp</string>
     <string name="email">Email:</string>
     <string name="entryHeader">Entries</string>
+    <string name="entryTitle">Title</string>
     <string name="header">myDiary</string>
     <string name="pass">Password:</string>
     <string name="search">Search</string>

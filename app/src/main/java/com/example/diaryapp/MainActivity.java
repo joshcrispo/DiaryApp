@@ -50,7 +50,8 @@ public class MainActivity extends AppCompatActivity {
             Cursor cursor = dbManager.getUser(email, pass);
 
             if (cursor.moveToFirst()) {
-                startActivity(new Intent(MainActivity.this, Menu.class));            }
+                startActivity(new Intent(MainActivity.this, Menu.class));
+            }
             else{
                 Toast.makeText(MainActivity.this, "Wrong login details", Toast.LENGTH_LONG).show();
             }
