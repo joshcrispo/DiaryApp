@@ -8,7 +8,8 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
-public class Menu extends AppCompatActivity {
+public class Menu extends AppCompatActivity{
+
 
     ImageButton calendar;
     ImageButton entryOverview;
@@ -33,7 +34,16 @@ public class Menu extends AppCompatActivity {
         search = (ImageButton) findViewById(R.id.search);
 
         // Event handlers for buttons
-        calendar.setOnClickListener(view -> startActivity(new Intent(Menu.this, Calendar.class)));
+        calendar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), Calendar.class);
+
+                // add the data to send to the next screen onto the intent as "extras"
+                intent.putExtra("userID", userID);
+                startActivity(intent);
+            }
+        });
 
         writeEntry.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -46,7 +56,17 @@ public class Menu extends AppCompatActivity {
             }
         });
 
-        settings.setOnClickListener(view -> startActivity(new Intent(Menu.this, Settings.class)));
+        settings.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), Settings.class);
+
+                // add the data to send to the next screen onto the intent as "extras"
+                intent.putExtra("userID", userID);
+                startActivity(intent);
+            }
+        });
+
         user.setOnClickListener(view -> Toast.makeText(Menu.this, "Clicked user", Toast.LENGTH_LONG).show());
         search.setOnClickListener(view -> Toast.makeText(Menu.this, "Clicked search", Toast.LENGTH_LONG).show());
 
