@@ -30,10 +30,9 @@ public class Menu extends AppCompatActivity {
         search = (ImageButton) findViewById(R.id.search);
 
         // Event handlers for buttons
-        calendar.setOnClickListener(view -> Toast.makeText(Menu.this, "Clicked calendar", Toast.LENGTH_LONG).show());
-        entryOverview.setOnClickListener(view -> Toast.makeText(Menu.this, "Clicked entry overview", Toast.LENGTH_LONG).show());
+        calendar.setOnClickListener(view -> startActivity(new Intent(Menu.this, Calendar.class)));
         writeEntry.setOnClickListener(view -> startActivity(new Intent(Menu.this, WriteEntry.class)));
-        settings.setOnClickListener(view -> Toast.makeText(Menu.this, "Clicked settings", Toast.LENGTH_LONG).show());
+        settings.setOnClickListener(view -> startActivity(new Intent(Menu.this, Settings.class)));
         user.setOnClickListener(view -> Toast.makeText(Menu.this, "Clicked user", Toast.LENGTH_LONG).show());
         search.setOnClickListener(view -> Toast.makeText(Menu.this, "Clicked search", Toast.LENGTH_LONG).show());
 

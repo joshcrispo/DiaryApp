@@ -6,4 +6,6 @@
     <string name="entryHeader">Entries</string>
     <string name="search">Search</string>
     <string name="entryTitle">Title</string>
+    <string name="calendar">Calendar</string>
+    <string name="settings">Settings</string>
 </resources>

@@ -2648,6 +2648,9 @@ int drawable notification_template_icon_bg 0x7f0700d2
 int drawable notification_template_icon_low_bg 0x7f0700d3
 int drawable notification_tile_bg 0x7f0700d4
 int drawable notify_panel_notification_icon_bg 0x7f0700d5
+int drawable onpage_calendar 0x7f0700e1
+int drawable onpage_menu_book 0x7f0700e0
+int drawable onpage_settings 0x7f0700e2
 int drawable test_level_drawable 0x7f0700d6
 int drawable tooltip_frame_dark 0x7f0700d7
 int drawable tooltip_frame_light 0x7f0700d8
@@ -3267,8 +3270,10 @@ int layout abc_search_dropdown_item_icons_2line 0x7f0b0018
 int layout abc_search_view 0x7f0b0019
 int layout abc_select_dialog_material 0x7f0b001a
 int layout abc_tooltip 0x7f0b001b
+int layout activity_calendar 0x7f0b006b
 int layout activity_main 0x7f0b001c
 int layout activity_menu 0x7f0b001d
+int layout activity_settings 0x7f0b006c
 int layout activity_write_entry 0x7f0b006a
 int layout custom_dialog 0x7f0b001e
 int layout design_bottom_navigation_item 0x7f0b001f
@@ -3385,6 +3390,7 @@ int string bottomsheet_action_expand 0x7f0f0020
 int string bottomsheet_action_expand_halfway 0x7f0f0021
 int string bottomsheet_drag_handle_clicked 0x7f0f0022
 int string bottomsheet_drag_handle_content_description 0x7f0f0023
+int string calendar 0x7f0f0094
 int string character_counter_content_description 0x7f0f0024
 int string character_counter_overflowed_content_description 0x7f0f0025
 int string character_counter_pattern 0x7f0f0026
@@ -3496,6 +3502,7 @@ int string path_password_eye_mask_visible 0x7f0f008e
 int string path_password_strike_through 0x7f0f008f
 int string search 0x7f0f0092
 int string search_menu_title 0x7f0f0090
+int string settings 0x7f0f0095
 int string status_bar_notification_info_overflow 0x7f0f0091
 int style AlertDialog_AppCompat 0x7f100000
 int style AlertDialog_AppCompat_Light 0x7f100001

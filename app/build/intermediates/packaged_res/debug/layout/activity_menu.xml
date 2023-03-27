@@ -101,7 +101,7 @@
         <ImageButton
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:src="@drawable/ic_baseline_menu_book_24"
+            android:src="@drawable/onpage_menu_book"
             android:background="@null"
             android:layout_weight="1"
             android:id="@+id/entryOverview"

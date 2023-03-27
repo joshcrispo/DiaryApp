@@ -12,6 +12,7 @@ public class DiaDbHelper extends SQLiteOpenHelper {
     // Diary App Tables
     protected static final String DB_USER_TABLE = "user";
     protected static final String DB_DIARY_ENTRY_TABLE = "diaryEntry";
+    protected static final String DB_USER_ENTRY_TABLE = "userEntry";
 
     // User columns
     protected static final String KEY_USER_ID = "uId";
@@ -37,6 +38,14 @@ public class DiaDbHelper extends SQLiteOpenHelper {
             KEY_TITLE + " TEXT NOT NULL, " +
             KEY_TEXT + " TEXT NOT NULL, " +
             KEY_DATE + " TEXT NOT NULL);";
+
+    private static final String DB_CREATE_USER_ENTRY_TABLE = "CREATE TABLE " + DB_USER_ENTRY_TABLE + " (" +
+            KEY_USER_ID + " INTEGER NOT NULL, " +
+            KEY_ENTRY_ID + " INTEGER NOT NULL, " +
+            "FOREIGN KEY (" + KEY_USER_ID + ") REFERENCES " + DB_USER_TABLE + " (" + KEY_USER_ID + ") ON DELETE CASCADE ON UPDATE CASCADE, " +
+            "FOREIGN KEY (" + KEY_ENTRY_ID + ") REFERENCES " + DB_DIARY_ENTRY_TABLE + " (" + KEY_ENTRY_ID + ") ON DELETE CASCADE ON UPDATE CASCADE, " +
+            "PRIMARY KEY (" + KEY_USER_ID + ", " + KEY_ENTRY_ID +")"
+            + ");";
 
 
     public DiaDbHelper(Context context) {

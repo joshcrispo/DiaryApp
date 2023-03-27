@@ -48,4 +48,5 @@ public class DiaryDatabaseManager extends DiaDbManager {
         String[] selectionArgs = {uEmail, uPass };
         return diaDB.rawQuery(query, selectionArgs);
     }
+
 }
