@@ -4,7 +4,7 @@ import android.content.Context;
 import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 
-public class DiaDbManager
+public class    DiaDbManager
 {
     Context context;
     private DiaDbHelper diaDbHelper;

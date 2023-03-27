@@ -50,6 +50,7 @@ public class MainActivity extends AppCompatActivity {
             Cursor cursor = dbManager.getUser(email, pass);
 
             if (cursor.moveToFirst()) {
+                dbManager.close();
                 startActivity(new Intent(MainActivity.this, Menu.class));
             }
             else{

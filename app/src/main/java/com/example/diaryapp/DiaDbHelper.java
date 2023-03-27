@@ -36,7 +36,7 @@ public class DiaDbHelper extends SQLiteOpenHelper {
             KEY_ENTRY_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
             KEY_TITLE + " TEXT NOT NULL, " +
             KEY_TEXT + " TEXT NOT NULL, " +
-            KEY_DATE + " DATE NOT NULL);";
+            KEY_DATE + " TEXT NOT NULL);";
 
 
     public DiaDbHelper(Context context) {

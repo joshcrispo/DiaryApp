@@ -4,12 +4,12 @@
         "source": "/Users/joshuacrispo/.gradle/daemon/7.4/com.example.diaryapp-main-31:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "/Users/joshuacrispo/.gradle/daemon/7.4/com.example.diaryapp-merged_res-29:/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "/Users/joshuacrispo/.gradle/daemon/7.4/com.example.diaryapp-main-31:/mipmap-hdpi/ic_launcher.webp"
-    },
-    {
         "merged": "/Users/joshuacrispo/.gradle/daemon/7.4/com.example.diaryapp-merged_res-29:/mipmap-hdpi_ic_launcher_round.webp.flat",
         "source": "/Users/joshuacrispo/.gradle/daemon/7.4/com.example.diaryapp-main-31:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/joshuacrispo/.gradle/daemon/7.4/com.example.diaryapp-merged_res-29:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "/Users/joshuacrispo/.gradle/daemon/7.4/com.example.diaryapp-main-31:/mipmap-hdpi/ic_launcher.webp"
     },
     {
         "merged": "/Users/joshuacrispo/.gradle/daemon/7.4/com.example.diaryapp-merged_res-29:/drawable_ic_launcher_background.xml.flat",
@@ -76,6 +76,14 @@
         "source": "/Users/joshuacrispo/.gradle/daemon/7.4/com.example.diaryapp-main-31:/layout/activity_write_entry.xml"
     },
     {
+        "merged": "com.example.diaryapp-merged_res-29:/drawable_ic_baseline_add_a_photo_24.xml.flat",
+        "source": "com.example.diaryapp-main-31:/drawable/ic_baseline_add_a_photo_24.xml"
+    },
+    {
+        "merged": "com.example.diaryapp-merged_res-29:/drawable_ic_baseline_keyboard_backspace_24.xml.flat",
+        "source": "com.example.diaryapp-main-31:/drawable/ic_baseline_keyboard_backspace_24.xml"
+    },
+    {
         "merged": "/Users/joshuacrispo/.gradle/daemon/7.4/com.example.diaryapp-merged_res-29:/mipmap-xhdpi_ic_launcher.webp.flat",
         "source": "/Users/joshuacrispo/.gradle/daemon/7.4/com.example.diaryapp-main-31:/mipmap-xhdpi/ic_launcher.webp"
     },
@@ -96,8 +104,20 @@
         "source": "/Users/joshuacrispo/.gradle/daemon/7.4/com.example.diaryapp-main-31:/mipmap-xxhdpi/ic_launcher.webp"
     },
     {
+        "merged": "com.example.diaryapp-merged_res-29:/drawable_ic_baseline_mic_24.xml.flat",
+        "source": "com.example.diaryapp-main-31:/drawable/ic_baseline_mic_24.xml"
+    },
+    {
+        "merged": "com.example.diaryapp-merged_res-29:/drawable_ic_baseline_mood_bad_24.xml.flat",
+        "source": "com.example.diaryapp-main-31:/drawable/ic_baseline_mood_bad_24.xml"
+    },
+    {
         "merged": "/Users/joshuacrispo/.gradle/daemon/7.4/com.example.diaryapp-merged_res-29:/mipmap-mdpi_ic_launcher_round.webp.flat",
         "source": "/Users/joshuacrispo/.gradle/daemon/7.4/com.example.diaryapp-main-31:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.diaryapp-merged_res-29:/drawable_ic_baseline_mood_24.xml.flat",
+        "source": "com.example.diaryapp-main-31:/drawable/ic_baseline_mood_24.xml"
     },
     {
         "merged": "/Users/joshuacrispo/.gradle/daemon/7.4/com.example.diaryapp-merged_res-29:/drawable_ic_baseline_menu_book_24.xml.flat",
