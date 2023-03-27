@@ -17,9 +17,10 @@
 
 
         <ImageButton
+            android:id="@+id/go_back"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:src="@drawable/ic_baseline_save_24"
+            android:src="@drawable/ic_baseline_keyboard_backspace_24"
             android:background="@null"
             android:layout_weight="7"></ImageButton>
 
@@ -98,34 +99,34 @@
         <ImageButton
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:src="@drawable/ic_baseline_calendar_month_24"
+            android:src="@drawable/ic_baseline_add_a_photo_24"
             android:background="@null"
             android:layout_weight="1"
-            android:id="@+id/calendar"
+            android:id="@+id/photo"
             ></ImageButton>
         <ImageButton
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:src="@drawable/ic_baseline_menu_book_24"
+            android:src="@drawable/ic_baseline_mic_24"
             android:background="@null"
             android:layout_weight="1"
-            android:id="@+id/entryOverview"
+            android:id="@+id/audio"
             ></ImageButton>
         <ImageButton
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:src="@drawable/ic_baseline_note_alt_24"
+            android:src="@drawable/ic_baseline_mood_24"
             android:background="@null"
             android:layout_weight="1"
-            android:id="@+id/writeEntry"
+            android:id="@+id/mood"
             ></ImageButton>
         <ImageButton
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:src="@drawable/ic_baseline_settings_24"
+            android:src="@drawable/ic_baseline_save_24"
             android:background="@null"
             android:layout_weight="1"
-            android:id="@+id/settings"
+            android:id="@+id/save"
             ></ImageButton>
 
     </LinearLayout>
